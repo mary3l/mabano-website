@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payroll.css">
+    <link rel="stylesheet" href="overall.css">
+    <title>Simple Computation</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">MGM</div>
+        <ul>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="conversion.html">ASSIGNMENT #1</a>
+            </li>
+            
+            <li>
+                <a href="income.html">ASSIGNMENT #2</a>
+            </li>
+            
+            <li>
+                <a href="factorial.html">ASSIGNMENT #3</a>
+            </li>
+            
+            <li>
+                <a href="payroll.html">ASSIGNMENT #4</a>
+            </li>
+        </ul>
+    </nav>
+  
+        <div class="wrapper">
+        	<div class ="container">
+        <label for="itemdesc">Employee Name:</label>    
+        <input id="itemdesc" name="itemdesc"></input>
+        </div>
+        
+        	<div class="container">
+        <label for="qty">Days Worked:</label>
+        <input id="qty" name="qty" type="number" oninput="computeamount()"></input>
+	</div>
+	</div>            
+<br>
+	<div class="wrapper2">
+		<div class ="container2">
+        <label for="price">Daily Rate:</label>
+        <input id="price" name="price" type="number" oninput="computeamount()"></input>
+	</div>
+		<div class ="container2">
+	<label for="amount">Deduction Amount:</label>	
+        <input id="amount" name="amount" type="number" oninput="computeamount()"></input>
+        <button onclick="addtocart()">Input</button>
+        </div>
+    </div>
+
+      
+         <div class="wrapper3">
+            <div class ="container3">
+        <label for="items">No. of Employee/s:</label>
+        <input id="items" name="items" type="number" readonly></input>
+        <button onclick="clearcart()">Clear Cart</button>
+	</div>
+
+
+            <div class ="container4">
+        <label for="delitem">Delete Employee:</label>
+        <input id="delitem" name="delitem" type="number" ></input>
+        <button onclick="deleteitem()" >Delete</button>  
+      
+        </div>
+    </div>
+
+        <p id="cart"></p>
+
+        <script src="payroll.js"></script>
+</body>
+</html>
